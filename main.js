@@ -1,8 +1,8 @@
-console.log('hello world');
-console.log('hello world');
+var express = require('express');
+var app = express();
 
-console.log('hello world');
-console.log('hello world');
-console.log('hello world');
+app.get('/', function(req, res){
+   res.send("Hello world!");
+});
 
-console.log('hello world');
+app.listen(4000);
